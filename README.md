@@ -1,2 +1,2 @@
-# youtube_url_parse
-Youtube URL perser for Deno.
+# youtube_url
+YouTube URL perser for Deno.
