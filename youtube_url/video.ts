@@ -148,7 +148,7 @@ export function getTimeSeconds(url: string): number {
   return parseTimeQuery(timeQuery).seconds;
 }
 
-export const parseYouTubeVideoURL = (url: string): YouTubeVideoURL => {
+export function parseYouTubeVideoURL(url: string): YouTubeVideoURL {
   if (!url) {
     throw new Error("url is required");
   }
@@ -169,4 +169,4 @@ export const parseYouTubeVideoURL = (url: string): YouTubeVideoURL => {
     videoId: videoId,
     startTime: timeSeconds === 0 ? undefined : timeSeconds,
   } as YouTubeVideoURL;
-};
+}
