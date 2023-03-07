@@ -1,6 +1,6 @@
-import type { ParseURL, URL, urlParams } from "../types/mod.ts";
+import type { URL, urlParams } from "../types/mod.ts";
 
-export const parseURL: ParseURL = (url) => {
+export function parseURL(url: string): URL {
   const urlInstance = new URL(url);
 
   const keys = Array.from(new Set(Array.from(urlInstance.searchParams.keys())));
@@ -26,4 +26,4 @@ export const parseURL: ParseURL = (url) => {
   };
 
   return parsedURL;
-};
+}

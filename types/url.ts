@@ -12,5 +12,4 @@ export type URL = {
   searchParams: { [key: string]: string[] };
   username: string;
 };
-export type ParseURL = (url: string) => URL;
 export type urlParams = { [key: string]: string[] };
